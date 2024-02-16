@@ -1,0 +1,113 @@
+.container
+{
+    width: 60%;
+    min-height: 200px;
+    border: 2px solid #000;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 100px auto 200px 100px;
+    grid-template-areas: "nav nav nav nav"
+                          "sidebar main main main"
+                          "sidebar box1 box2 box3"
+                          "footer footer footer footer";
+    grid-gap: 10px;
+}
+.nav
+{
+    background-color: blueviolet;
+    color: white;
+    grid-area: nav;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sidebar
+{
+    background-color: darkcyan;
+    color: white;
+    grid-area: sidebar;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-con
+{
+    background-color:crimson;
+    color: white;
+    grid-area: main;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    padding: 10px;
+}
+.box1
+{
+    background-color: lightgreen;
+    color: white;
+    grid-area: box1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box1 img
+{
+    width: 100%;
+    height: 100%;
+}
+.box2
+{
+    background-color: lightgreen;
+    color: white;
+    grid-area: box2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box2 img
+{
+    width: 100%;
+    height: 100%;
+}
+.box3
+{
+    background-color: lightgreen;
+    color: white;
+    grid-area: box3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box3 img
+{
+    width: 100%;
+    height: 100%;
+}
+.footer
+{
+    background-color: blueviolet;
+    color: white;
+    grid-area: footer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media only screen and (max-width: 768px) 
+{
+    .container
+    {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 60px 100px auto 300px 300px 300px 60px;
+        grid-template-areas: "nav"
+                              "sidebar"
+                              "main"
+                              "box1"
+                              "box2"
+                              "box3"
+                              "footer";
+    }
+}
