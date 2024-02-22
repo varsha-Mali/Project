@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive</title>
+    <style>
+       .Box
+       {
+        width: 80%;
+        min-height: 200px;
+        border: 2px solid #000;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        
+       }
+       .box1
+       {
+           width: 50%;
+           min-height: 100px;
+           border: 1px solid #000;
+           background-color: deeppink;
+           color: black;
+           display: flex;
+           flex-direction: row;
+           justify-content: space-evenly;
+           align-items: center;
+           
+       }
+       .box2
+       {
+           width: 50%;
+           min-height: 100px;
+           border: 1px solid #000;
+           background-color:lawngreen;
+           color: black;
+           display: flex;
+           flex-direction: row;
+           justify-content: space-evenly;
+           align-items: center;
+       }
+       @media only screen and (max-width:768px) 
+       {
+              .box1
+              {
+                background-color: aqua;
+                color: black;
+              }
+              .box2
+              {
+                background-color: crimson;
+                color: black;
+              }
+       }
+       @media only screen and (max-width:560px) 
+       {
+              .box1
+              {
+                background-color:darkmagenta;
+                color: black;
+              }
+              .box2
+              {
+                background-color:orangered;
+                color: black;
+              }
+       }
+    </style>
+
+</head>
+<body>
+    <div class="Box">
+        <div class="box1">
+            box1
+        </div>
+        <div class="box2">
+            box2
+        </div>
+    </div>
+</body>
+</html>
