@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border Image Demo</title>
+    <style>
+        .box
+        {
+            width: 300px;
+            height:auto;
+
+            border: 60px solid #000;
+            margin: 100px auto;
+            background-color: aquamarine;
+            border-image-source: url(./img/download\ \(1\).jpg);
+            border-image-slice: 40;
+            border-image-repeat:round;
+           border-image-outset: 20px;
+
+        }
+        .box p
+        {
+            padding: 10px;
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia magnam tempora, culpa pariatur, esse dolorem facere necessitatibus in quas fugiat voluptates ullam similique non illo voluptatem quia quisquam numquam dolor.
+        </p>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia magnam tempora, culpa pariatur, esse dolorem facere necessitatibus in quas fugiat voluptates ullam similique non illo voluptatem quia quisquam numquam dolor.
+        </p>
+       
+    </div>
+</body>
+</html>
