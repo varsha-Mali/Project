@@ -325,6 +325,18 @@ ul{
        justify-content: center;
        align-items: center;
     }
+    .box1{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        gap:15px;
+    }
+    .box1 .b2 .img-div1 img{
+
+       display: flex;
+       justify-content: center;
+       align-items: center;
+    }
     .footer-col{
         width: 100%;
     }
